@@ -1,0 +1,58 @@
+
+h2{
+    text-align: center;
+    margin: 10px;
+    padding: 50px;
+}
+body{
+background-color: rgb(240, 240, 240);
+}
+  .container {
+    margin: 50px;
+    padding: 50px;
+    border-radius: 40px;
+    background-color: rgb(42, 43, 43);
+    margin: 100px auto;
+    width: 600px;
+    text-align: center;
+    animation: progressAnimation 6s;
+  }
+
+  .progress-moved .container {
+    width: 100%; 
+    background-color: #EF476F;  
+    animation: progressAnimation 6s;
+  }
+  @keyframes progressAnimationStrike {
+    from { width: 0; background-color: #F9BCCA;}
+    to   { width: 100% }
+}
+
+
+.progress-bar2 {
+  height: 18px;
+  border-radius: 30px;
+  background-image: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;  
+  transition-property: width, background-color;    
+}
+
+.progress-moved .progress-bar2 {
+  width: 100%; 
+  background-color: #EF476F;  
+  animation: progressAnimation 6s;
+}
+
+@keyframes progressAnimation {
+    0%   { width: 0%; background-color: #F9BCCA;}
+    100% { width: 100%; background-color: #EF476F; }
+  }
+  
+  $green: #4cd964;
+  $turquoise: #5ac8fa;
+  $blue: #007aff;
+  $light-blue: #7DC8E8;
+  $purple: #5856d6;
+  $red: #ff2d55;
+
